@@ -8,4 +8,5 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/conf.d/cdn.conf:/etc/nginx/conf.d/cdn.conf
       - ./nginx/assets:/usr/share/nginx/html/assets
+      - ./nginx/log:/var/log/nginx
     container_name: cdn
